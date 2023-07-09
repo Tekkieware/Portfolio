@@ -1,1 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@400;500;600;700;800;900&display=swap');
 
+/* globals */
+$primaryColor: rgb(91, 80, 162);
+$altenativePrimaryColor: rgb(59, 135, 199);
+$primaryFont: 'Pathway Extreme', sans-serif;
+
+* {
+  font-family: $primaryFont;
+}
+
+
+/* Nav */
+
+
+.nav-link {
+  font-size: 15px;
+  color: #000;
+  margin-left: 10px;
+  font-weight: 600;
+  margin-right: 10px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: $primaryColor;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+  border-bottom: 2px solid $primaryColor;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  padding-right: 0;
+  padding-left: 0;
+
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar {
+  padding: 0 !important;
+}
+
+.navbar-toggler-icon {
+  border: none;
+
+}
+
+.navbar-toggler>.close {
+  display: inline;
+}
+
+.navbar-toggler.collapsed>.close,
+.navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: url('./images/close-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+}
+
+/* button */
+.btn-primary {
+  background-color: $primaryColor;
+  padding: 2px 30px;
+  border-radius: 50px;
+  font-size: 15px;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  padding: 5px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: $primaryColor;
+  border: 2px solid $primaryColor;
+}
+
+
+/*about page */
+.profile-image {
+  border-radius: 100%;
+  padding: 50px;
+}
+
+.profile-body {
+  margin-top: -50px;
+}
+
+.profile-name {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: $primaryColor;
+}
+
+
+.frontend{
+  padding-right: 10px;
+}
