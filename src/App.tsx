@@ -10,13 +10,16 @@ import ProfileCard from './components/ProfileCard';
 
 const App: React.FC = () => {
   return (
-    <div className='py-4 py-md-5'>
-      <Container>
+    <div className='py-md-5'>
+      
         <Router>
+        <Container className='content-card py-4'>
           <Row>
+            <Col>
             <Navigation />
+            </Col>
           </Row>
-          <Row>
+          <Row className='py-4'>
             <Col lg={4}>
               <ProfileCard />
             </Col>
@@ -30,10 +33,10 @@ const App: React.FC = () => {
               </Routes>
             </Col>
           </Row>
+ </Container>
 
         </Router>
-      </Container>
-
+     
     </div>
 
   );
