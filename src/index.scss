@@ -123,7 +123,7 @@ body{
   margin-top: -100px;
 }
 
-.profile-name {
+.profile-name,.contact-heading {
   font-weight: 800;
   font-size: 1.5rem;
 }
@@ -197,4 +197,18 @@ body{
     text-align: justify;
 }
 
-  
+.form-control {
+  border: none;
+  box-shadow: 0 0 5px rgb(211, 211, 214);
+  font-size: 14px;
+}
+
+.form-control:focus{
+  box-shadow: 0 0 5px rgb(91, 80, 162);
+}
+
+.contact-card{
+  box-shadow: 0 0 5px #dbd7d7;
+  background-color: #fff;border-radius: 10px;
+
+}
