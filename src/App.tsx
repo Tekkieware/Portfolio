@@ -20,10 +20,7 @@ const App: React.FC = () => {
             </Col>
           </Row>
           <Row className='py-4'>
-            <Col lg={4}>
-              <ProfileCard />
-            </Col>
-            <Col lg={8}>
+        
               <Routes>
 
                 <Route path='/' element={<About />} />
@@ -31,7 +28,6 @@ const App: React.FC = () => {
                 <Route path='contact' element={<Contact />} />
 
               </Routes>
-            </Col>
           </Row>
  </Container>
 

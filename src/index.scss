@@ -4,13 +4,14 @@
 $primaryColor: rgb(91, 80, 162);
 $altenativePrimaryColor: rgb(59, 135, 199);
 $primaryFont: 'Pathway Extreme', sans-serif;
+$backgroundColor: #f8f8f8;
 
 * {
   font-family: $primaryFont;
 }
 
 body{
-  background-color: $primaryColor;
+  background-color: $backgroundColor;
 }
 
 
@@ -111,7 +112,7 @@ body{
 /*about page */
 .profile-image {
   border-radius: 100%;
-  padding: 50px;
+  padding: 100px;
 }
 
 .profile-title{
@@ -119,7 +120,7 @@ body{
 }
 
 .profile-body {
-  margin-top: -50px;
+  margin-top: -100px;
 }
 
 .profile-name {
@@ -129,13 +130,13 @@ body{
 
 .profile-card{
   border: none;
-  box-shadow: 0 0 5px #dbd7d7;
+  box-shadow: 0 0 2px #dbd7d7;
   background-color: transparent;
 }
 
 .content-card{
   border: none;
-  box-shadow: 0 0 2px #dbd7d7;
+  box-shadow: 0 0 5px #dbd7d7;
   background-color: #f8f8f8;
 }
 
@@ -160,13 +161,10 @@ body{
   font-weight: 600;
 }
 
-.project-page{
-  background-color: #f8f8f8;
-}
 
 .project-card{
   border: none;
-  box-shadow: 0 0 5px #dbd7d7;
+  box-shadow: 0 0 2px #dbd7d7;
   border-radius: 10px;
 }
 
@@ -176,23 +174,27 @@ body{
     border-bottom: none;
     box-shadow: 0 0 2px #dbd7d7;
     border-radius: 10px 10px 0 0;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
+  }
+  .card-footer{
+    border-bottom: none;
+    box-shadow: 0 0 2px #dbd7d7;
+    border-radius: 0 0 10px 10px;
     .btn-secondary{
       color: #17141f;
       background-color: #ededed;
       border-color: #adb5bd;
-      padding: 1px 10px;
+      padding: 0 10px;
     }
   }
-  .card-footer{
-    background-color: #f8f8f8;
-    border-bottom: none;
-    box-shadow: 0 0 2px #dbd7d7;
-    border-radius: 0 0 10px 10px;
+}
+
+.project-description{
+  background-color: #f8f8f8;
     color: #000 !important;
-    font-size: 14px;
-  }
+    font-size: 15px;
+    text-align: justify;
 }
 
   
