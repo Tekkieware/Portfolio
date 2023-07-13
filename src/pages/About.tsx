@@ -1,8 +1,9 @@
-import React from 'react'
-import { Container, Row, Col, OverlayTrigger, Tooltip, Image } from 'react-bootstrap'
+import React, {useEffect} from 'react'
+import { Container, Row, Col, OverlayTrigger, Tooltip, Image, Button } from 'react-bootstrap'
 import { FaReact, FaNpm, FaSass, FaGithubSquare } from 'react-icons/fa'
 import { BiLogoCss3, BiLogoHtml5, BiLogoRedux, BiLogoBootstrap, BiLogoTypescript } from 'react-icons/bi'
 import { TbBrandDjango, TbBrandJavascript, TbBrandVscode } from 'react-icons/tb'
+import {Link} from 'react-router-dom'
 import { SiPostman } from 'react-icons/si'
 import { BsGit } from 'react-icons/bs'
 import python from '../images/python-logo.png'
@@ -10,7 +11,11 @@ import sql from '../images/sql-logo.png'
 import drf from '../images/drf-logo.png'
 import ProfileCard from '../components/ProfileCard'
 
+
 const About: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+   }, []);
   return (
     <Container fluid>
       <Row>
@@ -21,10 +26,10 @@ const About: React.FC = () => {
         <Container className='pages'>
           <Row className='text-center'>
             <Col>
-              <h1 className='about-title  '>Hello, I am a <b className='about-title-note'>full-stack developer</b>.</h1>
+              <h1 className='about-title  '>Hello, I'm a <b className='about-title-note'>full-stack developer</b>.</h1>
               <p className='about-message'>I wrote 'Hello Word' in VB.net shortly after learning HTML and CSS but my curousity led me to Python and i have since mastered
                 the use of Django and Django Rest Framework. I combine these with React to build for the web and my journey so far
-                has given birth to a couple of projects which you can explore in my PORTFOLIO.  I am constantly driven to learn and improve, and recently,
+                has given birth to a couple of projects which you can explore in my <Link to="portfolio"><Button variant="secondary">PORTFOLIO.</Button></Link> I am constantly driven to learn and improve, and recently,
                 I have been delving into Typescript, keeping myself up-to-date with the latest developments in the field. By the time you read this, it'll probably need an update.
                 Oh, and i almost forgot to add that i have a Higher National Diploma in Computer
                 Engineering Technology from Delta State Polytechnic, Ozoro.
@@ -156,12 +161,11 @@ const About: React.FC = () => {
           <hr />
           <h6 className='profile-title text-muted'>Hobbies.</h6>
           <hr />
-          <p>In my leisure time, I enjoy engaging in conversations and playing football,
+          <p className='about-message'>In my leisure time, I enjoy engaging in conversations and playing football,
             which allows me to unwind and connect with others. Additionally, I have a passion for video games, particularly those related to soccer.
             Exploring these virtual environments not only provides entertainment but also allows me to stay connected to my favorite sport. Furthermore,
             I allocate time to leisure reading, where I can enjoy captivating stories and narratives without the need for deep analysis or retention.
           </p>
-          <hr />
 
 
 

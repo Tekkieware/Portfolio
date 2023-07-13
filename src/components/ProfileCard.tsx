@@ -6,7 +6,7 @@ import photo from '../images/profile-photo.jpg'
 const ProfileCard: React.FC = () => {
     return (
         <div className='p-3'>
-            <Card className='profile-card pb-5'>
+            <Card className='profile-card pb-md-5'>
                 <Card.Img className='profile-image' variant="top" src={photo} />
                 <Card.Body className='profile-body text-center pb-5'>
                     

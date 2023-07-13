@@ -5,10 +5,11 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
-import ProfileCard from './components/ProfileCard';
+
 
 
 const App: React.FC = () => {
+  
   return (
     <div className='py-md-5'>
       
@@ -28,6 +29,12 @@ const App: React.FC = () => {
                 <Route path='contact' element={<Contact />} />
 
               </Routes>
+          </Row>
+          <hr className='d-block d-lg-none' />
+          <Row>
+            <Col>
+            <div className='footer text-center text-lg-end text-muted'>©Copyrights 2023 Tekkieware. All rights reserved.</div>
+            </Col>
           </Row>
  </Container>
 

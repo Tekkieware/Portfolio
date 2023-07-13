@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Container, Row, Col, Card, Button } from 'react-bootstrap'
 import codeconfab from '../images/codeconfab.png'
 import eplaza from '../images/eplaza.png'
@@ -10,13 +10,16 @@ import heed from '../images/heed.png'
 import { FaLaptopCode, FaLink, FaVideo } from 'react-icons/fa'
 
 const Portfolio: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+   }, []);
   return (
     <Container className='pages'>
        <Row className='p-3'>
         <Col md={6}>
           <Card className='project-card p-0 py-0'>
             <Card.Header className='text-center p-0 '>
-              My Portfolio
+              Personal Website
             </Card.Header>
             <Card.Body>
               <Card.Img variant="top" src={portfolio} />
@@ -34,7 +37,7 @@ const Portfolio: React.FC = () => {
         <Col md={6} className='project-description py-4 py-md-0 p-3'>
           <p><b>Description:</b> My personal website/portfolio.
            </p>
-          <p><b>Technologies:</b> SASS, React,Typescript, Bootstrap.</p>
+          <p><b>Technologies:</b> SASS, React, Typescript, Bootstrap.</p>
           <p><b>Roles:</b></p>
           <ul>
             <li>Developed it using React, SASS, and TypeScript to implement front-end functionalities.</li>
@@ -82,7 +85,7 @@ const Portfolio: React.FC = () => {
         <Col md={6}>
           <Card className='project-card p-0 py-0'>
             <Card.Header className='text-center p-0 '>
-              Knight Corporate Services
+              Knight Services
             </Card.Header>
             <Card.Body>
               <Card.Img variant="top" src={knight} />

@@ -4,12 +4,14 @@ import {Navbar, Nav, Image, Container, OverlayTrigger, Tooltip} from 'react-boot
 import {LinkContainer} from 'react-router-bootstrap'
 import {FaGithubSquare, FaLinkedin, FaFacebookSquare, FaTwitterSquare} from 'react-icons/fa'
 
+
 const Navigation:React.FC = () => {
     return (
-          <Container>
+          <Container >
           <Navbar expand="md" collapseOnSelect>
-            <Container>
-          <Navbar.Brand>
+            <Container className='navholder'>
+            
+          <Navbar.Brand href='/'>
               <Image 
                 src={logo}
                 width="60"
@@ -25,7 +27,7 @@ const Navigation:React.FC = () => {
               <Nav.Link>About Me</Nav.Link>
               </LinkContainer>
               
-              <LinkContainer to='/portfolio'>
+              <LinkContainer to='portfolio'>
               <Nav.Link>Portfolio</Nav.Link>
               </LinkContainer>
               <LinkContainer to='contact'>
@@ -36,11 +38,11 @@ const Navigation:React.FC = () => {
             </Nav>
             <Nav className='ms-auto text-center'>
               
-              <span>
-              <OverlayTrigger placement="top" overlay={<Tooltip>My Github Profile</Tooltip>}><a href='https://github.com/tekkieware' target='_blank' rel="noreferrer"><FaGithubSquare size={30} style={{ fill: '#171515' }} /></a></OverlayTrigger>
-              <OverlayTrigger placement="top" overlay={<Tooltip>My Linkedin Profile</Tooltip>}><a href='www.linkedin.com/in/isaiah-ozadhe' target='_blank' rel="noreferrer"><FaLinkedin size={30} style={{ fill: '#0077b5' }} /></a></OverlayTrigger>
-              <OverlayTrigger placement="top" overlay={<Tooltip>My Facebook Profile</Tooltip>}><a href='https://web.facebook.com/isaiah.ozadhe/' target='_blank' rel="noreferrer"><FaFacebookSquare size={30} style={{ fill: '#3b5998'}} /></a></OverlayTrigger>
-              <OverlayTrigger placement="top" overlay={<Tooltip>My Twitter Profile</Tooltip>}><a href='https://twitter.com/Tekkieware' target='_blank'rel="noreferrer"><FaTwitterSquare size={30} style={{ fill: '#00acee'}} /></a></OverlayTrigger>
+              <span className='nav-socials'>
+              <OverlayTrigger placement="top" overlay={<Tooltip>My Github Profile</Tooltip>}><a href='https://github.com/tekkieware' target='_blank' rel="noreferrer"><FaGithubSquare className='m-2 m-md-0' size={30} style={{ fill: '#171515' }} /></a></OverlayTrigger>
+              <OverlayTrigger placement="top" overlay={<Tooltip>My Linkedin Profile</Tooltip>}><a href='www.linkedin.com/in/isaiah-ozadhe' target='_blank' rel="noreferrer"><FaLinkedin className='m-2 m-md-0' size={30} style={{ fill: '#0077b5' }} /></a></OverlayTrigger>
+              <OverlayTrigger placement="top" overlay={<Tooltip>My Facebook Profile</Tooltip>}><a href='https://web.facebook.com/isaiah.ozadhe/' target='_blank' rel="noreferrer"><FaFacebookSquare className='m-2 m-md-0' size={30} style={{ fill: '#3b5998'}} /></a></OverlayTrigger>
+              <OverlayTrigger placement="top" overlay={<Tooltip>My Twitter Profile</Tooltip>}><a href='https://twitter.com/Tekkieware' target='_blank'rel="noreferrer"><FaTwitterSquare className='m-2 m-md-0' size={30} style={{ fill: '#00acee'}} /></a></OverlayTrigger>
                 
                 </span>
               

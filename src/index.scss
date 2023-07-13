@@ -11,16 +11,17 @@ $backgroundColor: #f8f8f8;
   font-family: $primaryFont;
 }
 
-body{
+body {
   background-color: $backgroundColor;
 }
 
 
-.tooltip{
+.tooltip {
   position: relative;
   z-index: 1;
-  display: inline-block;  
+  display: inline-block;
 }
+
 /* Nav */
 
 
@@ -106,7 +107,7 @@ body{
   color: $primaryColor;
   border: 1px solid $primaryColor;
   font-size: 12px;
-  background-color: #f8f8f8;
+  background-color: $backgroundColor;
 }
 
 
@@ -116,7 +117,7 @@ body{
   padding: 100px;
 }
 
-.profile-title{
+.profile-title {
   font-weight: 600;
 }
 
@@ -124,65 +125,80 @@ body{
   margin-top: -100px;
 }
 
-.profile-name,.contact-heading {
+.profile-name,
+.contact-heading {
   font-weight: 800;
   font-size: 1.5rem;
 }
 
-.profile-card{
+.profile-card {
   border: none;
   box-shadow: 0 0 2px #dbd7d7;
   background-color: transparent;
 }
 
-.content-card{
+.content-card {
   border: none;
   box-shadow: 0 0 5px #dbd7d7;
-  background-color: #f8f8f8;
+  background-color: $backgroundColor;
 }
 
-.pages{
+.pages {
   max-height: 64vh;
   overflow-y: scroll;
 }
 
-.about-title{
+.about-title {
   font-size: 50px;
 }
 
-.about-title-note{
+.about-title-note {
   color: $primaryColor;
+  font-size: 50px;
 }
 
-.about-message{
+.about-message {
   font-size: 16px;
+
+  .btn-secondary {
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-weight: 600;
+    color: $primaryColor;
+    border: none;
+    font-size: 13px;
+    background-color: $backgroundColor;
+    
+  }
 }
 
-.portfolio-title{
+.portfolio-title {
   font-weight: 600;
 }
 
 
-.project-card{
+.project-card {
   border: none;
   box-shadow: 0 0 2px #dbd7d7;
   border-radius: 10px;
 }
 
-.project-card{
-  .card-header{
-    background-color: #f8f8f8;
+.project-card {
+  .card-header {
+    background-color: $backgroundColor;
     border-bottom: none;
     box-shadow: 0 0 2px #dbd7d7;
     border-radius: 10px 10px 0 0;
     font-size: 23px;
     font-weight: 600;
   }
-  .card-footer{
+
+  .card-footer {
     border-bottom: none;
     box-shadow: 0 0 2px #dbd7d7;
     border-radius: 0 0 10px 10px;
-    .btn-secondary{
+
+    .btn-secondary {
       color: #17141f;
       background-color: #ededed;
       border-color: #adb5bd;
@@ -191,11 +207,13 @@ body{
   }
 }
 
-.project-description{
-  background-color: #f8f8f8;
-    color: #000 !important;
-    font-size: 15px;
-    text-align: justify;
+
+
+.project-description {
+  background-color: $backgroundColor;
+  color: #000 !important;
+  font-size: 15px;
+  text-align: justify;
 }
 
 .form-control {
@@ -204,18 +222,18 @@ body{
   font-size: 14px;
 }
 
-.form-control:focus{
+.form-control:focus {
   box-shadow: 0 0 5px rgb(91, 80, 162);
 }
 
-.contact-card{
+.contact-card {
   box-shadow: 0 0 5px #dbd7d7;
-  background-color: #fff;border-radius: 10px;
-
+  background-color: #fff;
+  border-radius: 10px
 }
 
 
-.tooltip{
+.tooltip {
   display: inline-block;
   color: #fff;
   text-align: center;
@@ -229,3 +247,177 @@ body{
   transition: opacity 0.3s;
 }
 
+
+.tooltip>.tooltip-inner {
+  font-weight: 700;
+  border-radius: 5px;
+
+}
+
+.loader {
+  z-index: 1;
+  position: absolute;
+  margin-left: 22%;
+  margin-top: 30vh;
+  padding: 0;
+  width: 70px;
+  height: 30px;
+
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background: $backgroundColor;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.loader:hover {
+  filter: contrast(1.1);
+}
+
+.loader:active {
+  filter: contrast(0.9);
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 3px solid $primaryColor;
+  transition: all .3s;
+  animation: clippath 3s infinite linear;
+  border-radius: 15px;
+}
+
+.loader::after {
+  animation: clippath 0.5s infinite -1.5s linear;
+}
+
+
+@keyframes clippath {
+
+  0%,
+  100% {
+    clip-path: inset(0 0 60% 0);
+  }
+
+  25% {
+    clip-path: inset(0 60% 0 0);
+  }
+
+  50% {
+    clip-path: inset(60% 0 0 0);
+  }
+
+  75% {
+    clip-path: inset(0 0 0 60%);
+  }
+}
+
+.loader-container {
+  width: 100%;
+  height: 100%;
+  background-color: $backgroundColor;
+}
+
+@media only screen and (max-width: 767px) {
+  #navbarSupportedContent {
+    width: 100vw;
+    height: 100vh;
+    background-color: $backgroundColor;
+    opacity: 0.9;
+    padding-top: 15vh;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+    font-size: 18px;
+    padding-top: 20px;
+
+  }
+
+  .nav-socials {
+    padding-top: 10px;
+  }
+
+
+  .navbar-nav .nav-link.active,
+  .navbar-nav .show>.nav-link {
+    border: none;
+    color: $primaryColor;
+    font-weight: 800;
+
+
+  }
+
+  .navholder {
+    padding-top: 10px;
+    background-color: $backgroundColor;
+    opacity: 0.9;
+  }
+
+  .loader {
+    margin-left: 38%;
+    margin-top: 40vh;
+  }
+
+  .about-title {
+    font-size: 40px;
+  }
+
+  .about-title-note {
+    color: $primaryColor;
+    font-size: 45px;
+  }
+
+  .about-message {
+    font-size: 15px;
+
+  }
+
+  .pages {
+    max-height: auto;
+    overflow: visible;
+  }
+
+  .profile-image {
+    padding: 20px;
+  }
+
+
+  .profile-body {
+    margin-top: -20px;
+  }
+
+  .content-card {
+    border: none;
+    background-color: $backgroundColor;
+    box-shadow: none;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+  .pages {
+    min-height: 60vh;
+    max-height: none;
+  }
+}
+
+
+.footer {
+  font-size: 12px;
+  font-weight: 600;
+  font-style: italic;
+}
