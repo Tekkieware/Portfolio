@@ -1,8 +1,8 @@
 import React from 'react'
 import logo from '../images/logo.png'
-import {Navbar, Nav, Image, Container, Button} from 'react-bootstrap'
+import {Navbar, Nav, Image, Container, OverlayTrigger, Tooltip} from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
-import {FaGithubSquare, FaLinkedin, FaFacebookSquare, FaTwitterSquare, FaInstagramSquare} from 'react-icons/fa'
+import {FaGithubSquare, FaLinkedin, FaFacebookSquare, FaTwitterSquare} from 'react-icons/fa'
 
 const Navigation:React.FC = () => {
     return (
@@ -37,10 +37,10 @@ const Navigation:React.FC = () => {
             <Nav className='ms-auto text-center'>
               
               <span>
-                <a href='https://github.com/tekkieware' target='_blank' rel="noreferrer"><FaGithubSquare size={30} style={{ fill: '#171515' }} /></a>
-                <a href='www.linkedin.com/in/isaiah-ozadhe' target='_blank' rel="noreferrer"><FaLinkedin size={30} style={{ fill: '#0077b5' }} /></a>
-                <a href='https://web.facebook.com/isaiah.ozadhe/' target='_blank' rel="noreferrer"><FaFacebookSquare size={30} style={{ fill: '#3b5998'}} /></a>
-                <a href='https://twitter.com/Tekkieware' target='_blank'rel="noreferrer"><FaTwitterSquare size={30} style={{ fill: '#00acee'}} /></a>
+              <OverlayTrigger placement="top" overlay={<Tooltip>My Github Profile</Tooltip>}><a href='https://github.com/tekkieware' target='_blank' rel="noreferrer"><FaGithubSquare size={30} style={{ fill: '#171515' }} /></a></OverlayTrigger>
+              <OverlayTrigger placement="top" overlay={<Tooltip>My Linkedin Profile</Tooltip>}><a href='www.linkedin.com/in/isaiah-ozadhe' target='_blank' rel="noreferrer"><FaLinkedin size={30} style={{ fill: '#0077b5' }} /></a></OverlayTrigger>
+              <OverlayTrigger placement="top" overlay={<Tooltip>My Facebook Profile</Tooltip>}><a href='https://web.facebook.com/isaiah.ozadhe/' target='_blank' rel="noreferrer"><FaFacebookSquare size={30} style={{ fill: '#3b5998'}} /></a></OverlayTrigger>
+              <OverlayTrigger placement="top" overlay={<Tooltip>My Twitter Profile</Tooltip>}><a href='https://twitter.com/Tekkieware' target='_blank'rel="noreferrer"><FaTwitterSquare size={30} style={{ fill: '#00acee'}} /></a></OverlayTrigger>
                 
                 </span>
               

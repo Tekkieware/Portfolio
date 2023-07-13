@@ -6,6 +6,7 @@ $altenativePrimaryColor: rgb(59, 135, 199);
 $primaryFont: 'Pathway Extreme', sans-serif;
 $backgroundColor: #f8f8f8;
 
+
 * {
   font-family: $primaryFont;
 }
@@ -212,3 +213,19 @@ body{
   background-color: #fff;border-radius: 10px;
 
 }
+
+
+.tooltip{
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -30px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+

@@ -5,6 +5,8 @@ import eplaza from '../images/eplaza.png'
 import knight from '../images/knight.png'
 import portfolio from '../images/portfolio.png'
 import gocommute from '../images/gocommute.png'
+import pizzalolo from '../images/pizzalolo.png'
+import heed from '../images/heed.png'
 import { FaLaptopCode, FaLink, FaVideo } from 'react-icons/fa'
 
 const Portfolio: React.FC = () => {
@@ -117,7 +119,7 @@ const Portfolio: React.FC = () => {
             Heed
             </Card.Header>
             <Card.Body>
-              <Card.Img variant="top" src={eplaza} />
+              <Card.Img variant="top" src={heed} />
             </Card.Body>
             <Card.Footer className="text-muted">
 
@@ -136,9 +138,9 @@ const Portfolio: React.FC = () => {
           <p><b>Roles:</b></p>
           <ul>
             <li>Worked with the backend team to implement a robust and scalable API architecture using FastAPI.</li>
-            <li>Implemented Natural Language Toolkit's(NLTK) libraries and algorithms to analyze the sentiment of text data</li>
-            <li>Utilized existing models within NLTK to classify sentiment as positive, negative, or neutral.</li>
+            <li>Implemented Natural Language Toolkit's(NLTK) libraries and algorithms to analyze the sentiment of text data and utilized existing models to classify sentiment as positive, negative, or neutral.</li>
             <li>Designed and developed endpoints that receive text input, perform sentiment analysis using the NLTK module, and return the sentiment analysis results</li>
+            <li>Implemented and integrated the Stripe payment system, utilizing Stripe CLI for configuring web hooks for subscription fulfilment.</li>
             <li>Utilized Postman to generated a well-structured and easily accessible API documentation for the sentiment analysis API, documenting the API endpoints, their functionality, and the required input/output parameters.</li>
           </ul>
         </Col>
@@ -152,7 +154,7 @@ const Portfolio: React.FC = () => {
             PizzaIolo
             </Card.Header>
             <Card.Body>
-              <Card.Img variant="top" src={eplaza} />
+              <Card.Img variant="top" src={pizzalolo} />
             </Card.Body>
             <Card.Footer className="text-muted">
 
