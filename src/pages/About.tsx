@@ -10,6 +10,7 @@ import python from '../images/python-logo.png'
 import sql from '../images/sql-logo.png'
 import drf from '../images/drf-logo.png'
 import ProfileCard from '../components/ProfileCard'
+import {Helmet} from 'react-helmet'
 
 
 const About: React.FC = () => {
@@ -18,6 +19,12 @@ const About: React.FC = () => {
    }, []);
   return (
     <Container fluid>
+      <Helmet>
+            <title>Isaiah Ozadhe - React, Python, Typescript</title>
+            <meta name="description" content="I wrote 'Hello Word' in VB.net shortly after learning HTML and CSS but my curousity led me to Python and i have since mastered
+                the use of Django and Django Rest Framework. I combine these with React to build for the web and my journey so far
+                has given birth to a couple of projects." />
+        </Helmet>
       <Row>
       <Col lg={4}>
         <ProfileCard />
@@ -31,7 +38,7 @@ const About: React.FC = () => {
                 the use of Django and Django Rest Framework. I combine these with React to build for the web and my journey so far
                 has given birth to a couple of projects which you can explore in my <Link to="portfolio"><Button variant="secondary">PORTFOLIO.</Button></Link> I am constantly driven to learn and improve, and recently,
                 I have been delving into Typescript, keeping myself up-to-date with the latest developments in the field. By the time you read this, it'll probably need an update.
-                Oh, and i almost forgot to add that i have a Higher National Diploma in Computer
+                I am a graduate of Computer
                 Engineering Technology from Delta State Polytechnic, Ozoro.
               </p>
             </Col>

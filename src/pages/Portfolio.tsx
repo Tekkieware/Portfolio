@@ -8,6 +8,7 @@ import gocommute from '../images/gocommute.png'
 import pizzalolo from '../images/pizzalolo.png'
 import heed from '../images/heed.png'
 import { FaLaptopCode, FaLink, FaVideo } from 'react-icons/fa'
+import {Helmet} from 'react-helmet'
 
 const Portfolio: React.FC = () => {
   useEffect(() => {
@@ -15,6 +16,12 @@ const Portfolio: React.FC = () => {
    }, []);
   return (
     <Container className='pages'>
+      <Helmet>
+            <title>Isaiah Ozadhe - Full Stack Developer - React, Python, Django, Django Rest Framework, Typescript</title>
+            <meta name="description" content="I wrote 'Hello Word' in VB.net shortly after learning HTML and CSS but my curousity led me to Python and i have since mastered
+                the use of Django and Django Rest Framework. I combine these with React to build for the web and my journey so far
+                has given birth to a couple of projects." />
+        </Helmet>
        <Row className='p-3'>
         <Col md={6}>
           <Card className='project-card p-0 py-0'>

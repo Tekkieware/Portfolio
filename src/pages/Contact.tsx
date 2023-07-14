@@ -3,6 +3,7 @@ import { Container, Row, Col, Form, Alert } from 'react-bootstrap'
 import emailjs from '@emailjs/browser';
 import ProfileCard from '../components/ProfileCard';
 import Loader from '../components/Loader';
+import {Helmet} from 'react-helmet'
 
 const Contact: React.FC = () => {
   useEffect(() => {
@@ -26,7 +27,12 @@ const Contact: React.FC = () => {
   };
   return (
     <Container fluid>
-
+      <Helmet>
+            <title>Isaiah Ozadhe - React, SASS, Python, Typescript</title>
+            <meta name="description" content="I wrote 'Hello Word' in VB.net shortly after learning HTML and CSS but my curousity led me to Python and i have since mastered
+                the use of Django and Django Rest Framework. I combine these with React to build for the web and my journey so far
+                has given birth to a couple of projects." />
+        </Helmet>
       <Row>
         <Col lg={4} className='d-none d-md-block'>
           <ProfileCard />
