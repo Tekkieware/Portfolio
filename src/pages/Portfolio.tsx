@@ -1,28 +1,65 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { Container, Row, Col, Card, Button } from 'react-bootstrap'
 import codeconfab from '../images/codeconfab.png'
 import eplaza from '../images/eplaza.png'
 import knight from '../images/knight.png'
 import portfolio from '../images/portfolio.png'
+import finstack from '../images/finstack.png'
 import gocommute from '../images/gocommute.png'
 import pizzalolo from '../images/pizzalolo.png'
 import heed from '../images/heed.png'
 import { FaLaptopCode, FaLink, FaVideo } from 'react-icons/fa'
-import {Helmet} from 'react-helmet'
+import { Helmet } from 'react-helmet'
 
 const Portfolio: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
-   }, []);
+  }, []);
   return (
     <Container className='pages'>
       <Helmet>
-            <title>Isaiah Ozadhe - Full Stack Developer - React, Python, Django, Django Rest Framework, Typescript</title>
-            <meta name="description" content="I wrote 'Hello Word' in VB.net shortly after learning HTML and CSS but my curousity led me to Python and i have since mastered
+        <title>Isaiah Ozadhe - Software Engineer- Python, Javascript, Typescript, Django, Flask, Nextjs, React, Docker</title>
+        <meta name="description" content="I wrote 'Hello Word' in VB.net shortly after learning HTML and CSS but my curousity led me to Python and i have since mastered
                 the use of Django and Django Rest Framework. I combine these with React to build for the web and my journey so far
                 has given birth to a couple of projects." />
-        </Helmet>
-       <Row className='p-3'>
+      </Helmet>
+      <Row className='p-3'>
+        <Col md={6}>
+          <Card className='project-card p-0 py-0'>
+            <Card.Header className='text-center p-0 '>
+              Finstack
+            </Card.Header>
+            <Card.Body>
+              <Card.Img variant="top" src={finstack} />
+            </Card.Body>
+            <Card.Footer className="text-muted">
+
+              <a href='https://www.usefinstack.co/' target='_blank' rel="noreferrer"><Button variant='secondary '><FaLink className='m-1' size={15} style={{ fill: '#171515' }} />Live Site</Button></a>
+
+
+              <a href='https://github.com/finstackhq/finstack' target='_blank' rel="noreferrer"><Button className='float-end' variant='secondary'><FaLaptopCode className='m-1' size={15} style={{ fill: '#171515' }} />Source Code</Button></a>
+
+            </Card.Footer>
+          </Card>
+        </Col>
+        <Col md={6} className='project-description py-4 py-md-0 p-3'>
+          <p><b>Description:</b> FinstackHQ's Official platform for currency conversion and peer to peer trading.
+          </p>
+          <p><b>Technologies:</b> Javascript, React, Next.js, Tailwind CSS, MongoDB, Authjs(NextAuth), Prisma,.</p>
+          <p><b>Roles:</b></p>
+          <ul>
+            <li>Developed the platform using JavaScript, React, and Next.js to implement front-end functionalities and deliver a good user experience.</li>
+            <li>Designed an aesthetically pleasing and user-friendly interface for the website, focusing on user-centered design principles and utilizing Tailwind CSS for responsive and modern styles.</li>
+            <li>Implemented robust backend systems using Prisma and MongoDB to manage data efficiently and ensure scalability.</li>
+            <li>Integrated secure authentication and user session management with Auth.js (NextAuth), ensuring user data safety and privacy.</li>
+            <li>Optimized performance and SEO using Next.js server-side rendering and dynamic routing capabilities.</li>
+            <li>Currently maintaining and enhancing the platform, incorporating user feedback and continuously updating features to align with business goals.</li>
+          </ul>
+        </Col>
+
+      </Row>
+      <hr />
+      <Row className='p-3'>
         <Col md={6}>
           <Card className='project-card p-0 py-0'>
             <Card.Header className='text-center p-0 '>
@@ -43,14 +80,14 @@ const Portfolio: React.FC = () => {
         </Col>
         <Col md={6} className='project-description py-4 py-md-0 p-3'>
           <p><b>Description:</b> My personal website/portfolio.
-           </p>
+          </p>
           <p><b>Technologies:</b> SASS, React, Typescript, Bootstrap.</p>
           <p><b>Roles:</b></p>
           <ul>
             <li>Developed it using React, SASS, and TypeScript to implement front-end functionalities.</li>
             <li> Designed an aesthetically pleasing and user-friendly interface for the website, focusing on user-centered design principles and utilizing SASS for custom styles.</li>
             <li>Implemented TypeScript to enhance code quality, maintainability, and scalability, utilizing its features and compile-time checks for robust development.</li>
-            </ul>
+          </ul>
         </Col>
 
       </Row>
@@ -76,19 +113,19 @@ const Portfolio: React.FC = () => {
         </Col>
         <Col md={6} className='project-description py-4 py-md-0 p-3'>
           <p><b>Description:</b> Official company website of Gocommute Travels.
-           </p>
+          </p>
           <p><b>Technologies:</b> CSS3, React, Bootstrap.</p>
           <p><b>Roles:</b></p>
           <ul>
             <li>Developed an intuitive and visually appealing user interface using React, Bootstrap, and CSS3, ensuring a good user experience across devices and maintaining consistent branding.</li>
             <li>Implemented search engine optimization (SEO) strategies by optimizing meta tags, headings, URLs, and content structure to improve organic search rankings and drive targeted traffic to the website.</li>
             <li>Integrated Google Analytics to track website traffic, user behavior, and conversion metrics, utilizing data-driven insights for further optimization and decision-making.</li>
-            </ul>
+          </ul>
         </Col>
 
       </Row>
       <hr />
-       <Row className='p-3'>
+      <Row className='p-3'>
         <Col md={6}>
           <Card className='project-card p-0 py-0'>
             <Card.Header className='text-center p-0 '>
@@ -109,7 +146,7 @@ const Portfolio: React.FC = () => {
         </Col>
         <Col md={6} className='project-description py-4 py-md-0 p-3'>
           <p><b>Description:</b> Official company website of Knight Corporate Services.
-           </p>
+          </p>
           <p><b>Technologies:</b> CSS3, React, Bootstrap.</p>
           <p><b>Roles:</b></p>
           <ul>
@@ -126,7 +163,7 @@ const Portfolio: React.FC = () => {
         <Col md={6}>
           <Card className='project-card p-0 py-0'>
             <Card.Header className='text-center p-0 '>
-            Heed
+              Heed
             </Card.Header>
             <Card.Body>
               <Card.Img variant="top" src={heed} />
@@ -137,7 +174,7 @@ const Portfolio: React.FC = () => {
 
               <a className='m-2 d-none d-md-inline' href='https://www.linkedin.com/posts/heed-cx_are-you-looking-to-improve-your-customer-activity-7024745444949827584-Fhwi?utm_source=share&utm_medium=member_desktop' target='_blank' rel="noreferrer"><Button variant='secondary'><FaVideo className='m-1' size={15} style={{ fill: '#171515' }} />Presentation</Button></a>
 
-              <a  href='https://github.com/workshopapps/customersupport.web' target='_blank' rel="noreferrer"><Button className='float-end' variant='secondary'><FaLaptopCode className='m-1' size={15} style={{ fill: '#171515' }} />Source Code</Button></a>
+              <a href='https://github.com/workshopapps/customersupport.web' target='_blank' rel="noreferrer"><Button className='float-end' variant='secondary'><FaLaptopCode className='m-1' size={15} style={{ fill: '#171515' }} />Source Code</Button></a>
 
             </Card.Footer>
           </Card>
@@ -161,7 +198,7 @@ const Portfolio: React.FC = () => {
         <Col md={6}>
           <Card className='project-card p-0 py-0'>
             <Card.Header className='text-center p-0 '>
-            PizzaIolo
+              PizzaIolo
             </Card.Header>
             <Card.Body>
               <Card.Img variant="top" src={pizzalolo} />
@@ -177,11 +214,11 @@ const Portfolio: React.FC = () => {
           </Card>
         </Col>
         <Col md={6} className='project-description py-4 py-md-0 p-3'>
-          <p><b>Description:</b> A custom pizza delivery application that empowers users to 
-          create their own personalized pizzas based on their preferences. With this platform, users can select 
-          their desired crust type, sauce options, cheese varieties, 
-          and a wide array of vegetables to create the perfect pizza combination. 
-          One of the standout features of the application is its dynamic pricing functionality. The price of each custom pizza is calculated based on the selected crust, sauce, cheese, and vegetable options chosen by the user. This ensures transparency and accuracy in pricing, allowing users to see the cost of their custom pizza before making a payment and placing an order.</p>
+          <p><b>Description:</b> A custom pizza delivery application that empowers users to
+            create their own personalized pizzas based on their preferences. With this platform, users can select
+            their desired crust type, sauce options, cheese varieties,
+            and a wide array of vegetables to create the perfect pizza combination.
+            One of the standout features of the application is its dynamic pricing functionality. The price of each custom pizza is calculated based on the selected crust, sauce, cheese, and vegetable options chosen by the user. This ensures transparency and accuracy in pricing, allowing users to see the cost of their custom pizza before making a payment and placing an order.</p>
           <p><b>Technologies:</b> CSS3, React, Python, Django Rest Framework, Redux.</p>
           <p><b>Roles:</b></p>
           <ul>
@@ -217,9 +254,9 @@ const Portfolio: React.FC = () => {
         </Col>
         <Col md={6} className='project-description py-4 py-md-0 p-3'>
           <p><b>Description:</b> Eplaza is a dynamic E-commerce website that allows users browse through a wide range
-           of products and add them to their carts. From there, they can proceed to make secure and convenient online payments for their orders.
-           One of Eplaza's key features is its robust admin interface which gives administrators complete control over the inventory, allowing them to update product information, track stock levels, and manage order fulfillment.
-           </p>
+            of products and add them to their carts. From there, they can proceed to make secure and convenient online payments for their orders.
+            One of Eplaza's key features is its robust admin interface which gives administrators complete control over the inventory, allowing them to update product information, track stock levels, and manage order fulfillment.
+          </p>
           <p><b>Technologies:</b> CSS3, React, Python, Django Rest Framework, Redux.</p>
           <p><b>Roles:</b></p>
           <ul>

@@ -9,37 +9,37 @@ import Contact from './pages/Contact';
 
 
 const App: React.FC = () => {
-  
+
   return (
-    <div className='py-md-5'>
-      
-        <Router>
+    <div className='py-md-5 holder'>
+
+      <Router>
         <Container className='content-card py-4'>
           <Row>
             <Col>
-            <Navigation />
+              <Navigation />
             </Col>
           </Row>
           <Row className='py-4'>
-        
-              <Routes>
 
-                <Route path='/' element={<About />} />
-                <Route path='portfolio' element={<Portfolio />} />
-                <Route path='contact' element={<Contact />} />
+            <Routes>
 
-              </Routes>
+              <Route path='/' element={<About />} />
+              <Route path='portfolio' element={<Portfolio />} />
+              <Route path='contact' element={<Contact />} />
+
+            </Routes>
           </Row>
           <hr className='d-block d-lg-none' />
           <Row>
             <Col>
-            <div className='footer text-center text-lg-end text-muted'>©Copyrights 2023 Tekkieware. All rights reserved.</div>
+              <div className='footer text-center text-lg-end text-muted'>©Copyrights 2024 Isaiah Ozadhe. All rights reserved.</div>
             </Col>
           </Row>
- </Container>
+        </Container>
 
-        </Router>
-     
+      </Router>
+
     </div>
 
   );
