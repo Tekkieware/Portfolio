@@ -12,7 +12,7 @@ const ProfileCard: React.FC = () => {
 
                     <Card.Title className='profile-name text-center'>Isaiah Ozadhe</Card.Title>
                     <h6 className='text-center text-muted profile-sub'>Software Engineer</h6>
-                    <a href='https://drive.google.com/file/d/1Jy6xiG5wVmA2VgnZdVwKRhe4KF6In-BP/view?usp=sharing' target='_blank' rel="noreferrer"><Button variant='secondary'>Download CV</Button></a>
+                    <a href='https://drive.google.com/file/d/1Gp0KiRFRtYAG7-QMv3M4AVBOSudxqw1Y/view?usp=sharing' target='_blank' rel="noreferrer"><Button variant='secondary'>Download My Resume</Button></a>
                 </Card.Body>
 
             </Card>
