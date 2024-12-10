@@ -37,9 +37,9 @@ const About: React.FC = () => {
               <Col>
                 <h1 className='about-title'>Hello, I'm a <b className='about-title-note'>Software Engineer</b>.</h1>
                 <p className='about-message'>I wrote 'Hello Word' in VB.net shortly after learning HTML and CSS but my curousity led me to Python and i have since mastered
-                  the use of Django and Django Rest Framework. I combine these with React to build for the web and my journey so far
-                  has given birth to a couple of projects which you can explore in my <Link to="portfolio"><Button variant="secondary">PORTFOLIO.</Button></Link> I am constantly driven to learn and improve, and recently,
-                  I have been delving into Typescript, keeping myself up-to-date with the latest developments in the field. By the time you read this, it'll probably need an update.
+                  the use of Django and Flask. I combine these with React and Nextjs to build for the web and my journey so far
+                  has given birth to a couple of projects, some of which you can explore in my <Link to="portfolio"><Button variant="secondary">PORTFOLIO.</Button></Link> I am constantly driven to learn and improve, and recently,
+                  I have been delving into containerization(Docker), keeping myself up-to-date with the latest developments in the field. By the time you read this, it'll probably need an update.
                   I am a graduate of Computer
                   Engineering Technology from Delta State Polytechnic, Ozoro.
                 </p>
